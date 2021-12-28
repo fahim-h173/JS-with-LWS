@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript</title>
+  </head>
+  <body>
+    <p id="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis omnis
+      accusamus debitis doloribus delectus sint repellat. Nam quaerat
+      necessitatibus eaque!
+    </p>
+    <button
+      type="button"
+      onclick="document.getElementById('text').innerHTML = 'Hello Javascript'"
+    >
+      click me
+    </button>
+    <br>
+    <br>
+    <br>
+    <button type="button" onclick="document.getElementById('lighton').src='/pic_bulbon.gif'">Turn light On</button>
+    <img id="lighton" src="/pic_bulboff.gif"cl alt="" style="width: 100px;">
+    <button type="button" onclick="document.getElementById('lighton').src='/pic_bulboff.gif'">Turn light Off</button>
+    <p id="innerChanges"></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <button onclick="this.innerHTML=Date();">inside date with short</button>
+
+
+    <br>
+    <br>
+    <br>
+
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <button id="event" onclick="dates()">Show Time & Date</button>
+    <script>
+        document.getElementById("innerChanges").innerHTML=5+10-2*6/2;
+    </script>
+    <script src="/classes.js"></script>
+  </body>
+</html>
