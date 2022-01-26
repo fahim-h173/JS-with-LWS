@@ -35,11 +35,6 @@
       Turn light Off
     </button>
     <p id="innerChanges"></p>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
 
     <button onclick="this.innerHTML=Date();">inside date with short</button>
 
@@ -50,17 +45,56 @@
     <p id="demo2"></p>
     <button type="button" onclick="myfunction()">Count</button>
     <p id="demo3">0</p>
-    <p id="test"></p>
-    <p id="test2"></p>
+    <br>
+    <p id="demo">Hello World!</p>
+    <br>
+    <div id="div">
+      <p id="p1" class="node">This is a paragraph text</p>
+      <br>
+      <p id="p2" class="node">This is a paragraph text</p>
+      <button id="textBTN" >Click to Change</button>
+
+    </div>
+    
+    <br>
+    <button id="rmBTN" class="node"> remove</button>
+    <br>
+
+    <br>
+    <button id="cal">click to calcutlate</button>
+    <br>
+    <p id="test" class="node"></p>
+    <br>
+    <p id="test2" class="node"></p>
+    <br>
     <p id="test3"></p>
+    <br>
     
     <p id="test4"></p>
-    
 
+    <!-- <form id="frm1" action="">
+      First name: <input type="text" name="fname" value="Donald"><br>
+      Last name: <input type="text" name="lname" value="Duck"><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+     -->
+    <form
+      name="myForm"
+      action="/action_page.php"
+      onsubmit="return validateForm()"
+      method="post"
+    >
+      Name: <input type="text" name="fname" />
+      <input type="submit" value="Submit" />
+    </form>
+      <br>
+      <br>
+      <br>
+      <br>
     <button id="event" onclick="dates()">Show Time & Date</button>
     <script>
       document.getElementById("innerChanges").innerHTML = 5 + 10 - (2 * 6) / 2;
     </script>
-    <script src="/promises.js"></script>
+    <script src="/node-navigation.js"></script>
   </body>
 </html>
